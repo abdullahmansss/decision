@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/rate_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:fontFamily="@font/cas"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/rate_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Are You Sure to Delete This Account ?!!"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/cas"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleWhite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+
+                    <Button
+                        android:id="@+id/cancel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="cancel"
+                        android:background="@color/colorAccent"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/cas"
+                        />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    />
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleWhite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+
+                    <Button
+                        android:id="@+id/yes_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="rate"
+                        android:background="@color/colorAccent"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/cas"
+                        />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:id="@+id/main_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:foreground="@color/overlay_dark_40"
+        android:src="@drawable/a"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/urde"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:src="@drawable/ba"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/message_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edittext"
+                android:layout_margin="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/urde"
+                    android:alpha=".2"
+                    />
+
+                <TextView
+                    android:id="@+id/msg_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cas"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/urde"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/main_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/more_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share"
+                android:tint="@android:color/white"
+                app:fabSize="mini"
+                android:clickable="true"
+                app:rippleColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/RippleStyleWhite"
+                    >
+
+                    <Button
+                        android:id="@+id/save_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/bs"
+                        android:gravity="center"
+                        />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/RippleStyleWhite"
+                    >
+
+                    <Button
+                        android:id="@+id/next_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/bs"
+                        android:gravity="center"
+                        />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/RippleStyleWhite"
+                    >
+
+                    <Button
+                        android:id="@+id/back_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/bs"
+                        android:gravity="center"
+                        />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/face_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_facebook"
+            app:fabSize="mini"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:text="@string/facebook"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

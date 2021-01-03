@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+    </style>
+
+    <style name="RippleStyleGrey">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#80808080</item>
+        <item name="mrl_rippleAlpha">0.2</item>
+    </style>
+
+    <style name="RippleStyleWhite">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#FFF</item>
+        <item name="mrl_rippleAlpha">0.2</item>
+    </style>
+
+</resources>

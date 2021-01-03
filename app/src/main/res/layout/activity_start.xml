@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/urde"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="30dp"
+                >
+
+                <EditText
+                    android:id="@+id/fname_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="13dp"
+                    android:textSize="16sp"
+                    android:hint=""
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                >
+
+                <EditText
+                    android:id="@+id/lname_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="13dp"
+                    android:textSize="16sp"
+                    android:hint=""
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                >
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/male_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="male"
+                        android:padding="13dp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/female_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="female"
+                        android:padding="13dp"
+                        />
+
+                </RadioGroup>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="15dp"
+                >
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/RippleStyleWhite"
+                    >
+
+                    <Button
+                        android:id="@+id/next_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:onClick="next"
+                        />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

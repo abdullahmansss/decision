@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LangActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:gravity="center"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lang_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/lang_img"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/ar"
+                android:padding="50dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/RippleStyleWhite">
+
+                    <Button
+                        android:id="@+id/ar_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="العربيه"
+                        android:background="@color/colorAccent"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/cas"
+                        android:onClick="arabic"
+                        />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    />
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/RippleStyleWhite">
+
+                    <Button
+                        android:id="@+id/eng_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="English"
+                        android:background="@color/colorAccent"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/bs"
+                        android:onClick="english"
+                        android:alpha=".5"
+                        />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        >
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RippleStyleWhite"
+            >
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="التالي"
+                android:background="@color/colorAccent"
+                android:textColor="@android:color/white"
+                android:onClick="next"
+                android:fontFamily="@font/cas"
+                />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
